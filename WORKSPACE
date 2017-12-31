@@ -12,6 +12,7 @@ maven_jar(
 new_http_archive(
     name = "com_github_square_okio",
     urls = ["https://github.com/square/okio/archive/okio-parent-1.13.0.tar.gz"],
-    build_file = "//okio_build.bzl",
+    build_file = "okio_build.bzl",
+    strip_prefix = "okio-okio-parent-1.13.0"
     )
 
